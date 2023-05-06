@@ -23,7 +23,7 @@ pipeline {
     stage('Push to Heroku registry') {
       steps {
         sh '''
-          docker tag darinpope/java-web-app:latest registry.heroku.com/$APP_NAME/web
+          docker tag darinpope/Exam_DevOps:latest registry.heroku.com/$APP_NAME/web
           docker push registry.heroku.com/$APP_NAME/web
         '''
       }
